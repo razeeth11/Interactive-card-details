@@ -1,0 +1,76 @@
+body{
+  font-family: 'Space Grotesk', sans-serif;
+  background-image: url("images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.front-image{
+  position: relative;
+  top: 50px;
+  left: 200px;
+  width: 350px;
+}
+
+.big{
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: white;
+}
+
+.small{
+  position: absolute;
+  top: 30px;
+  left: 75px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  border: 1px solid white;
+}
+
+.front-card-number{
+  position: absolute;
+  color:  hsl(0, 0%, 100%);
+  top: 80px;
+  left: 25px;
+  font-size: 22px;
+  word-spacing: 8px;
+}
+
+.front-card-name{
+  position: absolute;
+  color:  hsl(0, 0%, 100%);
+  top: 145px;
+  left: 25px;
+  font-size: 12px;
+}
+
+.front-card-expiry{
+  position: absolute;
+  color:  hsl(0, 0%, 100%);
+  top: 145px;
+  right: 30px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.back-image{
+  position: relative;
+  top: 75px;
+  left: 280px;
+  width: 350px;
+}
+
+.back-card-cvv{
+  position: absolute;
+  color:  hsl(0, 0%, 100%);
+  top : 70px;
+  left: 275px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
