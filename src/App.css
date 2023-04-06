@@ -58,6 +58,10 @@ body{
   font-size: 12px;
 }
 
+img{
+  max-width: 350px;
+}
+
 .front-card-expiry{
   position: absolute;
   color:  hsl(0, 0%, 100%);
@@ -147,4 +151,163 @@ button{
 input:focus{
   outline: 1px solid hsl(249, 99%, 64%);
   border-radius: 2px;
+}
+
+@media screen and (max-width : 960px) {
+
+  body{
+    font-family: 'Space Grotesk', sans-serif;
+    background-image: url("images/bg-main-mobile.png");
+    background-size:contain;
+  }
+  
+  .App{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 450px;
+    margin: auto;
+  }
+
+  .back-image{
+    position: absolute;
+    top: 75px;
+    left: 140px;
+    max-width: 350px;
+  }
+
+  .front-image{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    max-width: 350px;
+  }
+
+}
+
+
+@media screen and (max-width : 500px) {
+
+  body{
+    font-family: 'Space Grotesk', sans-serif;
+    background-image: url("images/bg-main-mobile.png");
+    background-size: contain;
+  }
+  
+  .App{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 340px;
+    margin: auto;
+  }
+
+  .back-image{
+    position: absolute;
+    top: 30px;
+    left: 70px;
+    max-width: 350px;
+  }
+
+  .front-image{
+    position: absolute;
+    top: 140px;
+    left: 50px;
+    max-width: 350px;
+  }
+
+}
+
+@media screen and (max-width : 375px ) {
+  
+  body{
+    font-family: 'Space Grotesk', sans-serif;
+    background-image: url("images/bg-main-mobile.png");
+    background-size: contain;
+  }
+
+  .App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .front-image{
+    position: relative;
+    top: 10px;
+    left: 0px;
+    width: 250px;
+  }
+  
+  .big{
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: white;
+  }
+  
+  .small{
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    border: 1px solid white;
+  }
+  
+  .front-card-number{
+    position: absolute;
+    color:  hsl(0, 0%, 100%);
+    top: 60px;
+    left: 25px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    word-spacing: 8px;
+  }
+  
+  .front-card-name{
+    position: absolute;
+    color:  hsl(0, 0%, 100%);
+    top: 100px;
+    left: 25px;
+    font-size: 10px;
+  }
+  
+  img{
+    max-width: 250px;
+  }
+  
+  .front-card-expiry{
+    position: absolute;
+    color:  hsl(0, 0%, 100%);
+    top: 100px;
+    right: 30px;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  
+  .back-image{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 250px;
+  }
+  
+  .back-card-cvv{
+    position: absolute;
+    color:  hsl(0, 0%, 100%);
+    top : 10px;
+    left: 210px;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+
 }
