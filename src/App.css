@@ -5,6 +5,14 @@ body{
   overflow-x: hidden;
 }
 
+.App{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 300px;
+  margin: 50px auto;
+}
+
 .front-image{
   position: relative;
   top: 50px;
@@ -38,6 +46,7 @@ body{
   top: 80px;
   left: 25px;
   font-size: 22px;
+  letter-spacing: 1px;
   word-spacing: 8px;
 }
 
@@ -73,4 +82,69 @@ body{
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 2px;
+}
+
+.form-data{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 50px;
+  gap: 10px;
+  width: 300px;
+}
+
+input{
+  font-size: 14px;
+  padding: 10px 5px;
+}
+
+.div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.div-one{
+  width: 90%;
+}
+
+.month{
+  width: 30%;
+}
+
+.year{
+  margin-left: 5px;
+  width: 30%;
+}
+
+.month,.year,.cvv{
+  margin-top: 10px;
+}
+
+.cvv{
+  box-sizing: border-box;
+  width: 100%;
+}
+
+label{
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+button{
+  padding: 10px;
+  font-size: 12px;
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  border: none;
+}
+
+input:focus{
+  outline: 1px solid hsl(249, 99%, 64%);
+  border-radius: 2px;
 }
