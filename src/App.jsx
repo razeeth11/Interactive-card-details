@@ -44,7 +44,7 @@ function App() {
         <div className="front-image">
           <div className="big"></div>
           <div className="small"></div>
-          <img src="./src/assets/images/bg-card-front.png" alt="images/bg-card-front.png" />
+          <img src="../src/assets/images/bg-card-front.png" alt="images/bg-card-front.png" />
           <p className="front-card-number">
             {number ? number : "0000 0000 0000 0000"}
           </p>
